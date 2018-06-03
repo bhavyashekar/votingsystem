@@ -1,0 +1,77 @@
+﻿
+<div class="page-header page-header-default">
+    <div class="page-header-content"></div>
+    <div class="breadcrumb-line">
+        <ul class="breadcrumb">
+            <li>
+                <a>
+                    <i class="{{i == 0 ? 'icon-home2 position-left':''}} {{ ' active'}}"></i> Vote
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--<bread-crumb (productChange)="receiveMessage($event)"></bread-crumb>-->
+</div>
+<div class="panel panel-white" id="personaManagement" >
+    <div class="panel-heading">
+        <h6 class="panel-title">C V RamanNagar Constituency</h6>
+        <div class="heading-elements">
+            <ul class="icons-list">
+                <li><a data-action="close" (click)="onCloseFormClick()"></a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="panel-body">
+        <table class="table datatable-basic">
+            <thead>
+                <tr>
+                    <th width="100"><a href="#">Number</a></th>
+                    <th width="100"><a href="#">Name</a></th>
+                    <th width="100"><a href="#">Party</a></th>
+                    <th width="100"><a href="#">Vote</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        Etasha
+                    </td>
+                    <td><img alt="starwomen" src="/assets/images/nakshatra.png" style="height:50px;width:50px" /></td>
+                    <!--<td> <a [routerLink]="['/vote', 547039586626]" (click)="storeVote(1)"><img alt="radha" src="/assets/images/votebutton.png" style="height:50px;width:50px" /></a> </td>-->
+                    <td> <a [routerLink]="['/vote', 547039586626]" (click)="storeVote(1)" [attr.disabled]="isDisableButton?'disabled':null" [class]="isDisableButton? 'btn btn-primary disable-btn':'btn btn-primary'"><img alt="radha" src="/assets/images/votebutton.png" style="height:50px;width:50px" /></a> </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        Chintana
+                    </td>
+                    <td><img alt="starwomen" src="/assets/images/chintana.png" style="height:50px;width:50px" /></td>
+                    <!--<td> <a [routerLink]="['/vote', 547039586626]" (click)="storeVote(2)"><img alt="radha" src="/assets/images/votebutton.png" style="height:50px;width:50px" /></a> </td>-->
+                    <td> <a [routerLink]="['/vote', 547039586626]" (click)="storeVote(2)" [attr.disabled]="isDisableButton?'disabled':null" [class]="isDisableButton? 'btn btn-primary disable-btn':'btn btn-primary'"><img alt="radha" src="/assets/images/votebutton.png" style="height:50px;width:50px" /></a> </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        Radha
+                    </td>
+                    <td><img alt="radha" src="/assets/images/radha.png" style="height:50px;width:50px" /></td>
+                    <!--<td> <a [routerLink]="['/vote', 547039586626]" (click)="storeVote(3)"><img alt="radha" src="/assets/images/votebutton.png" style="height:50px;width:50px" /></a> </td>-->
+                    <td> <a [routerLink]="['/vote', 547039586626]" (click)="storeVote(3)" [attr.disabled]="isDisableButton?'disabled':null" [class]="isDisableButton? 'btn btn-primary disable-btn':'btn btn-primary'"><img alt="radha" src="/assets/images/votebutton.png" style="height:50px;width:50px" /></a> </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        Pragathi
+                    </td>
+                    <td><img alt="starwomen" src="/assets/images/pragathi.png" style="height:50px;width:50px" /></td>
+                    <td> <a [routerLink]="['/vote', 547039586626]" (click)="storeVote(4)" [attr.disabled]="isDisableButton?'disabled':null" [class]="isDisableButton? 'btn btn-primary disable-btn':'btn btn-primary'"><img alt="radha" src="/assets/images/votebutton.png" style="height:50px;width:50px" /></a> </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

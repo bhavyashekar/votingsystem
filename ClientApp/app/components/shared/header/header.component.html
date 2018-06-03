@@ -1,0 +1,35 @@
+﻿  <!-- Main navbar Starts -->
+<div class="navbar navbar-inverse navposition">
+    <!-- Logo Container Starts -->
+    <div class="navbar-header">
+        <!--<a class="navbar-brand" href="">--><img src="/assets/images/eclogo.png" alt="" class="pull-left" [routerLink]="['/home']" style="height:70px;width:70px;padding-top:20px"><span class="logo-text"> Election Commission of India</span><!--</a>-->
+
+        <ul class="nav navbar-nav visible-xs-block">
+            <li><a class="mobile-menu-position " data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-grid5"></i></a></li>
+            <li><a class="sidebar-mobile-main-toggle mobile-menu-position"><i class="icon-paragraph-justify3"></i></a></li>
+        </ul>
+    </div><!-- Logo Container Ends-->
+
+    <div class="navbar-collapse collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav navbar-right">
+         
+
+        
+
+            <li class="dropdown dropdown-user">
+                <a class="dropdown-toggle " data-toggle="dropdown">
+                    <img src="/assets/images/User.png" alt="">
+                    <span>{{username.firstName + ' ' + username.lastName}}</span>
+                    <i class="caret"></i>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+                    <li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+                    <li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Main navbar Ends Here-->

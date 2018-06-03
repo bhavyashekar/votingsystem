@@ -1,0 +1,43 @@
+<div class='main-nav'>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+        </div>
+        <div class='clearfix'></div>
+        <div class='navbar-collapse collapse'>
+            <ul class='nav navbar-nav' style="margin-top: 150px;">
+                <li>
+                    <a [routerLink]="['/Product',familyId]">
+                        <span class='glyphicon glyphicon-home'></span> Product Definition
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/Builds']">
+                        <span class='glyphicon glyphicon-cog'></span> Builds
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/TestSuite']">
+                        <span class='glyphicon glyphicon-th-list'></span> Test Suites
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/Persona']">
+                        <span class='glyphicon glyphicon-th-list'></span>Product Personas
+                    </a>
+                </li>
+                <li>
+                    <a href="http://confluence.dell.com/display/DCP/Elements+Contacts">
+                        <span class='glyphicon glyphicon-th-list'></span> Contact Us
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
